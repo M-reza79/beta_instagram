@@ -1,5 +1,6 @@
 import 'package:beta_instagram/screens/sich.dart';
 import 'package:beta_instagram/screens/manSkrin.dart';
+import 'package:beta_instagram/screens/singin.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: TextTheme(
           headlineMedium: TextStyle(
@@ -44,9 +44,9 @@ class MyApp extends StatelessWidget {
             ),
       ),
       debugShowCheckedModeBanner: false,
-      home: Sich(),
+      home: Singin(),
     );
   }
 }
 
-// Manskrin()
+

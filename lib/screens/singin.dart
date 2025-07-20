@@ -1,10 +1,14 @@
+import 'package:beta_instagram/screens/manSkrin.dart';
+import 'package:beta_instagram/screens/sich.dart';
+import 'package:beta_instagram/widgets/navigator.dart';
 import 'package:flutter/material.dart';
 
 class Singin extends StatefulWidget {
   const Singin({super.key});
 
   @override
-  State<Singin> createState() => _SinginState();
+  State<Singin> createState() =>
+      _SinginState();
 }
 
 class _SinginState extends State<Singin> {
@@ -26,12 +30,13 @@ class _SinginState extends State<Singin> {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xff323A99),
-              Color(0xffF98BFC),
-            ]),
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xff323A99),
+            Color(0xffF98BFC),
+          ],
+        ),
       ),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
@@ -61,9 +66,7 @@ class _SinginState extends State<Singin> {
               fit: BoxFit.cover,
             ),
           ),
-          Expanded(
-            child: Container(),
-          ),
+          Expanded(child: Container()),
         ],
       ),
     );
@@ -72,28 +75,36 @@ class _SinginState extends State<Singin> {
   Widget _buildButton() {
     return Column(
       children: [
-        Expanded(
-          child: Container(),
-        ),
+        Expanded(child: Container()),
         Expanded(
           child: Container(
             decoration: BoxDecoration(
               color: Color(0xff1C1F2E),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(15),
-                topRight: Radius.circular(15),
-              ),
+              borderRadius:
+                  BorderRadius.only(
+                    topLeft: Radius.circular(
+                      15,
+                    ),
+                    topRight:
+                        Radius.circular(15),
+                  ),
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment:
+                  CrossAxisAlignment.center,
+              mainAxisAlignment:
+                  MainAxisAlignment
+                      .spaceEvenly,
               children: [
                 SizedBox(
                   width: double.infinity,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment:
+                      MainAxisAlignment
+                          .center,
+                  crossAxisAlignment:
+                      CrossAxisAlignment.end,
                   children: [
                     Text(
                       'Sign in to ',
@@ -103,78 +114,154 @@ class _SinginState extends State<Singin> {
                         fontFamily: 'GB',
                       ),
                     ),
-                    Image.asset('images/mood.png'),
+                    Image.asset(
+                      'images/mood.png',
+                    ),
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 44),
+                  padding:
+                      EdgeInsets.symmetric(
+                        horizontal: 44,
+                      ),
                   child: TextField(
                     focusNode: _focusNode1,
                     style: TextStyle(
-                        color: Colors.white, fontFamily: 'GM', fontSize: 15),
+                      color: Colors.white,
+                      fontFamily: 'GM',
+                      fontSize: 15,
+                    ),
                     decoration: InputDecoration(
                       contentPadding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                          EdgeInsets.symmetric(
+                            vertical: 15,
+                            horizontal: 15,
+                          ),
 
                       enabledBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(color: Color(0xffC5C5C5), width: 3),
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                            BorderSide(
+                              color: Color(
+                                0xffC5C5C5,
+                              ),
+                              width: 3,
+                            ),
+                        borderRadius:
+                            BorderRadius.all(
+                              Radius.circular(
+                                10,
+                              ),
+                            ),
                       ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide:
-                            BorderSide(color: Color(0xffF35383), width: 3),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
+                      focusedBorder:
+                          OutlineInputBorder(
+                            borderSide:
+                                BorderSide(
+                                  color: Color(
+                                    0xffF35383,
+                                  ),
+                                  width: 3,
+                                ),
+                            borderRadius:
+                                BorderRadius.circular(
+                                  10,
+                                ),
+                          ),
 
                       // border: OutlineInputBorder(
                       //   borderRadius: BorderRadius.circular(10),
                       // ),
-                      focusColor: Color(0xffF35383),
+                      focusColor: Color(
+                        0xffF35383,
+                      ),
                       labelText: 'Email',
                       labelStyle: TextStyle(
-                          color: _focusNode1.hasFocus
-                              ? Color(0xffF35383)
-                              : Color(0xffC5C5C5),
-                          fontFamily: 'GM'),
+                        color:
+                            _focusNode1
+                                .hasFocus
+                            ? Color(
+                                0xffF35383,
+                              )
+                            : Color(
+                                0xffC5C5C5,
+                              ),
+                        fontFamily: 'GM',
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 32,
-                ),
+                SizedBox(height: 32),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 44),
+                  padding:
+                      EdgeInsets.symmetric(
+                        horizontal: 44,
+                      ),
                   child: TextField(
                     focusNode: _focusNode2,
                     style: TextStyle(
-                        color: Colors.white, fontFamily: 'GM', fontSize: 15),
+                      color: Colors.white,
+                      fontFamily: 'GM',
+                      fontSize: 15,
+                    ),
                     decoration: InputDecoration(
-                      contentPadding: EdgeInsets.symmetric(
-                        vertical: 15,
-                        horizontal: 15,
-                      ),
+                      contentPadding:
+                          EdgeInsets.symmetric(
+                            vertical: 15,
+                            horizontal: 15,
+                          ),
                       focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderRadius:
+                            BorderRadius.all(
+                              Radius.circular(
+                                10,
+                              ),
+                            ),
                         borderSide:
-                            BorderSide(color: Color(0xffF35383), width: 3),
+                            BorderSide(
+                              color: Color(
+                                0xffF35383,
+                              ),
+                              width: 3,
+                            ),
                       ),
                       enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderRadius:
+                            BorderRadius.all(
+                              Radius.circular(
+                                10,
+                              ),
+                            ),
                         borderSide:
-                            BorderSide(color: Color(0xffC5C5C5), width: 3),
+                            BorderSide(
+                              color: Color(
+                                0xffC5C5C5,
+                              ),
+                              width: 3,
+                            ),
                       ),
                       labelText: 'Password',
                       labelStyle: TextStyle(
-                          color: _focusNode2.hasFocus
-                              ? Color(0xffF35383)
-                              : Color(0xffC5C5C5),
-                          fontFamily: 'GM'),
+                        color:
+                            _focusNode2
+                                .hasFocus
+                            ? Color(
+                                0xffF35383,
+                              )
+                            : Color(
+                                0xffC5C5C5,
+                              ),
+                        fontFamily: 'GM',
+                      ),
                     ),
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    nviagtlogint(
+                      context,
+                      Sich(),
+                    );
+                  },
                   child: Text('sign in'),
                 ),
                 Padding(
@@ -183,23 +270,30 @@ class _SinginState extends State<Singin> {
                     bottom: 50,
                   ),
                   child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Don\'t have an account? / ',
-                          style: TextStyle(
-                              fontFamily: 'GB',
-                              color: Colors.grey[700],
-                              fontSize: 16),
+                    mainAxisAlignment:
+                        MainAxisAlignment
+                            .center,
+                    children: [
+                      Text(
+                        'Don\'t have an account? / ',
+                        style: TextStyle(
+                          fontFamily: 'GB',
+                          color: Colors
+                              .grey[700],
+                          fontSize: 16,
                         ),
-                        Text(
-                          ' Sign up',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontFamily: 'GB'),
+                      ),
+                      Text(
+                        ' Sign up',
+                        style: TextStyle(
+                          color:
+                              Colors.white,
+                          fontSize: 16,
+                          fontFamily: 'GB',
                         ),
-                      ]),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
