@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:beta_instagram/home/sherBottomSheet.dart';
+import 'package:beta_instagram/widgets/sherBottomSheet.dart';
 import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
  

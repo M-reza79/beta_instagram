@@ -1,8 +1,8 @@
-import 'package:beta_instagram/falit/homeActiviti.dart';
-import 'package:beta_instagram/home/homeoage.dart';
-import 'package:beta_instagram/homeFolo/Fomeuser.dart';
-import 'package:beta_instagram/homesrch/homesrch.dart';
-import 'package:beta_instagram/post/post.dart';
+import 'package:beta_instagram/screens/homeActiviti.dart';
+import 'package:beta_instagram/screens/homeoage.dart';
+import 'package:beta_instagram/screens/Fomeuser.dart';
+import 'package:beta_instagram/screens/homesrch.dart';
+import 'package:beta_instagram/screens/post.dart';
 import 'package:flutter/material.dart';
  
 
